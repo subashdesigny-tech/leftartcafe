@@ -766,37 +766,61 @@
         <div class="color-text">
           <span class="font-rounded" style="color: var(--color-pink); font-weight:700; text-transform:uppercase; font-size:0.9rem; letter-spacing:0.1em; display:block; margin-bottom:12px;">Dedicated Brand</span>
           <h2 class="font-rounded">Happy Coloring™</h2>
-          <p>Explore our exclusive collection of hand-drawn coloring sheets. Subscribe to receive monthly themes directly in your inbox, and download a free sheet below to start painting right now!</p>
-          
-          <div class="sheet-selector">
-            <h4>Select a Coloring Theme:</h4>
-            <div class="sheet-grid">
-              <button class="sheet-option active" data-id="sheet1" aria-label="Cozy Mountains Theme">
-                <svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#FAF8F5"/><circle cx="20" cy="18" r="8" fill="none" stroke="#2D2A2E" stroke-width="1.5"/></svg>
-              </button>
-              <button class="sheet-option" data-id="sheet2" aria-label="Easel Art Studio Theme">
-                <svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#FAF8F5"/><rect x="12" y="10" width="16" height="20" fill="none" stroke="#2D2A2E" stroke-width="1.5"/></svg>
-              </button>
-              <button class="sheet-option" data-id="sheet3" aria-label="Floral Mandala Theme">
-                <svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#FAF8F5"/><circle cx="20" cy="20" r="12" fill="none" stroke="#2D2A2E" stroke-width="1.5" stroke-dasharray="2 2"/></svg>
-              </button>
+          <div class="sheet-selector" style="margin-top: 20px;">
+            <h4 style="font-family: var(--font-sans); font-size:1rem; margin-bottom:10px; font-weight:600;">Choose a Design:</h4>
+            <div class="sheet-grid" style="display:flex; gap:12px; margin-bottom:20px;">
+              <button class="sheet-option active" data-id="sheet1" style="background:#FAF8F5; border:2px solid #5C36C1; padding:8px 16px; border-radius:var(--radius-md); font-family:var(--font-sans); font-weight:600; cursor:pointer;" aria-label="Cozy Mountains Theme">Cozy Mountains</button>
+              <button class="sheet-option" data-id="sheet2" style="background:#FAF8F5; border:1px solid var(--color-glass-border); padding:8px 16px; border-radius:var(--radius-md); font-family:var(--font-sans); font-weight:600; cursor:pointer;" aria-label="Easel Art Studio Theme">Easel Studio</button>
+              <button class="sheet-option" data-id="sheet3" style="background:#FAF8F5; border:1px solid var(--color-glass-border); padding:8px 16px; border-radius:var(--radius-md); font-family:var(--font-sans); font-weight:600; cursor:pointer;" aria-label="Floral Mandala Theme">Floral Mandala</button>
             </div>
+          </div>
+
+          <div class="paint-palette-container" style="margin-top: 24px; margin-bottom: 24px;">
+            <h4 style="font-family: var(--font-sans); font-size:1rem; margin-bottom:12px; font-weight:600;">Select Paint Color:</h4>
+            <div class="color-palette" style="display:flex; gap:12px; flex-wrap:wrap;">
+              <button class="palette-color" data-color="#5C36C1" style="background:#5C36C1; width:36px; height:36px; border-radius:50%; border:3px solid #FAF8F5; box-shadow:0 0 0 2px #5C36C1; cursor:pointer;" aria-label="Brand Purple"></button>
+              <button class="palette-color" data-color="#FF4081" style="background:#FF4081; width:36px; height:36px; border-radius:50%; border:3px solid #FAF8F5; cursor:pointer;" aria-label="Brand Pink"></button>
+              <button class="palette-color" data-color="#FF8A65" style="background:#FF8A65; width:36px; height:36px; border-radius:50%; border:3px solid #FAF8F5; cursor:pointer;" aria-label="Brand Orange"></button>
+              <button class="palette-color" data-color="#4FC3F7" style="background:#4FC3F7; width:36px; height:36px; border-radius:50%; border:3px solid #FAF8F5; cursor:pointer;" aria-label="Brand Blue"></button>
+              <button class="palette-color" data-color="#81C784" style="background:#81C784; width:36px; height:36px; border-radius:50%; border:3px solid #FAF8F5; cursor:pointer;" aria-label="Brand Green"></button>
+              <button class="palette-color" data-color="#FFD54F" style="background:#FFD54F; width:36px; height:36px; border-radius:50%; border:3px solid #FAF8F5; cursor:pointer;" aria-label="Brand Yellow"></button>
+              <button class="palette-color" data-color="#ffffff" style="background:#ffffff; width:36px; height:36px; border-radius:50%; border:2px solid #2D2A2E; cursor:pointer;" aria-label="Eraser/White"></button>
+            </div>
+            <p style="font-size: 0.82rem; color: var(--color-gray); margin-top: 10px;">Click a color circle, then tap any shape inside the preview sheet to paint!</p>
           </div>
           
           <div style="display:flex; gap:16px;">
-            <button class="btn btn-primary btn-download-sheet">Download Coloring Sheet</button>
+            <button class="btn btn-primary btn-download-sheet">Download Masterpiece</button>
             <button class="btn btn-secondary btn-book-workshop" data-package="Happy Coloring Subscription">Join Monthly Club</button>
           </div>
         </div>
 
         <div class="color-visual-box">
-          <h4 style="font-family: var(--font-sans); font-size:1rem; margin-bottom:12px; font-weight:600; text-align:center; color: var(--color-purple);">Coloring Sheet Preview</h4>
+          <h4 style="font-family: var(--font-sans); font-size:1rem; margin-bottom:12px; font-weight:600; text-align:center; color: var(--color-purple);">Tap to Paint Canvas</h4>
           <div class="preview-canvas-box" id="sheet-preview-canvas">
-            <svg viewBox="0 0 100 100">
-              <rect width="100" height="100" fill="none" stroke="#2D2A2E" stroke-width="2"/>
-              <circle cx="50" cy="40" r="18" fill="none" stroke="#2D2A2E" stroke-width="1.5"/>
-              <path d="M20 75 Q40 50 50 62 T80 75" fill="none" stroke="#2D2A2E" stroke-width="1.5"/>
-              <path d="M50 40 L50 90" fill="none" stroke="#2D2A2E" stroke-width="1" stroke-dasharray="2 2"/>
+            <svg viewBox="0 0 100 100" class="paintable-svg" style="width:100%; height:100%;">
+              <!-- Background / Sky -->
+              <rect x="0" y="0" width="100" height="100" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+              <!-- Sun rays / Sky sections -->
+              <path d="M0 0 L50 45 L50 0 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+              <path d="M100 0 L50 45 L100 45 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+              <path d="M0 45 L50 45 L0 80 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+              <!-- Sun -->
+              <circle cx="50" cy="45" r="18" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+              <!-- Mountain 1 (Back left) -->
+              <polygon points="0,85 30,50 60,85" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+              <!-- Mountain 2 (Back right) -->
+              <polygon points="40,85 70,55 100,85" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+              <!-- Mountain 3 (Foreground center) -->
+              <polygon points="20,85 50,60 80,85" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+              <!-- Mountain Snow Caps -->
+              <polygon points="30,50 26,55 34,55" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+              <polygon points="70,55 66,60 74,60" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+              <polygon points="50,60 46,65 54,65" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+              <!-- Ground / Grass left -->
+              <path d="M0 85 Q25 80 50 85 L50 100 L0 100 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+              <!-- Ground / Grass right -->
+              <path d="M50 85 Q75 90 100 85 L100 100 L50 100 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
             </svg>
           </div>
         </div>

@@ -170,7 +170,7 @@ function initCursorFollower() {
   });
 
   // Event Delegation for hover status
-  const hoverSelector = 'a, button, .demo-card, .product-card, .gallery-item, .faq-header, .wizard-option-card, .sheet-option, .social-links a, .btn-cart, .btn-book-workshop';
+  const hoverSelector = 'a, button, .demo-card, .product-card, .gallery-item, .faq-header, .wizard-option-card, .sheet-option, .social-links a, .btn-cart, .btn-book-workshop, .palette-color, .paint-path';
   
   document.addEventListener('mouseover', (e) => {
     const target = e.target.closest(hoverSelector);
@@ -827,36 +827,84 @@ function openCheckoutSuccessModal() {
   });
 }
 
-/* 8. Happy Coloring sheet downloads */
+/* 8. Happy Coloring sheet downloads & Interactive Painter */
 const coloringSheets = {
   sheet1: `
-    <svg viewBox="0 0 100 100">
-      <rect width="100" height="100" fill="none" stroke="#2D2A2E" stroke-width="2"/>
-      <circle cx="50" cy="40" r="18" fill="none" stroke="#2D2A2E" stroke-width="1.5"/>
-      <path d="M20 75 Q40 50 50 62 T80 75" fill="none" stroke="#2D2A2E" stroke-width="1.5"/>
-      <path d="M50 40 L50 90" fill="none" stroke="#2D2A2E" stroke-width="1" stroke-dasharray="2 2"/>
+    <svg viewBox="0 0 100 100" class="paintable-svg" style="width:100%; height:100%;">
+      <!-- Background / Sky -->
+      <rect x="0" y="0" width="100" height="100" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+      <!-- Sun rays / Sky sections -->
+      <path d="M0 0 L50 45 L50 0 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <path d="M100 0 L50 45 L100 45 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <path d="M0 45 L50 45 L0 80 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <!-- Sun -->
+      <circle cx="50" cy="45" r="18" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+      <!-- Mountain 1 (Back left) -->
+      <polygon points="0,85 30,50 60,85" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+      <!-- Mountain 2 (Back right) -->
+      <polygon points="40,85 70,55 100,85" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+      <!-- Mountain 3 (Foreground center) -->
+      <polygon points="20,85 50,60 80,85" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+      <!-- Mountain Snow Caps -->
+      <polygon points="30,50 26,55 34,55" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <polygon points="70,55 66,60 74,60" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <polygon points="50,60 46,65 54,65" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <!-- Ground / Grass left -->
+      <path d="M0 85 Q25 80 50 85 L50 100 L0 100 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+      <!-- Ground / Grass right -->
+      <path d="M50 85 Q75 90 100 85 L100 100 L50 100 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
     </svg>
   `,
   sheet2: `
-    <svg viewBox="0 0 100 100">
-      <rect width="100" height="100" fill="none" stroke="#2D2A2E" stroke-width="2"/>
-      <path d="M15 80 L85 80" stroke="#2D2A2E" stroke-width="2"/>
-      <rect x="35" y="30" width="30" height="40" fill="none" stroke="#2D2A2E" stroke-width="1.5"/>
-      <line x1="30" y1="70" x2="35" y2="30" stroke="#2D2A2E" stroke-width="1.5" />
-      <line x1="70" y1="70" x2="65" y2="30" stroke="#2D2A2E" stroke-width="1.5" />
-      <path d="M40 45 C42 40, 58 40, 60 45 Q50 65 40 45" fill="none" stroke="#2D2A2E" stroke-width="1"/>
+    <svg viewBox="0 0 100 100" class="paintable-svg" style="width:100%; height:100%;">
+      <!-- Background Wall -->
+      <rect x="0" y="0" width="100" height="100" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+      <!-- Studio floor -->
+      <path d="M0 80 L100 80 L100 100 L0 100 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+      <!-- Easel back leg (line) -->
+      <line x1="50" y1="20" x2="30" y2="90" stroke="#2D2A2E" stroke-width="2"/>
+      <line x1="50" y1="20" x2="70" y2="90" stroke="#2D2A2E" stroke-width="2"/>
+      <!-- Canvas frame -->
+      <rect x="25" y="30" width="50" height="38" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2" rx="2"/>
+      <!-- Painting inside canvas -->
+      <circle cx="50" cy="49" r="10" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.5"/>
+      <path d="M50 39 Q45 44 50 49 Q55 44 50 39 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <path d="M50 59 Q45 54 50 49 Q55 54 50 59 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <path d="M40 49 Q45 44 50 49 Q45 54 40 49 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <path d="M60 49 Q55 44 50 49 Q55 54 60 49 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <!-- Palette -->
+      <path d="M72 85 C70 80 88 80 86 85 C85 88 74 88 72 85 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.5"/>
+      <!-- Palette colors -->
+      <circle cx="75" cy="84" r="2" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1"/>
+      <circle cx="79" cy="85" r="2" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1"/>
+      <circle cx="83" cy="84" r="2" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1"/>
     </svg>
   `,
   sheet3: `
-    <svg viewBox="0 0 100 100">
-      <rect width="100" height="100" fill="none" stroke="#2D2A2E" stroke-width="2"/>
-      <circle cx="50" cy="50" r="30" fill="none" stroke="#2D2A2E" stroke-width="1.5" stroke-dasharray="3 2"/>
-      <circle cx="50" cy="50" r="10" fill="none" stroke="#2D2A2E" stroke-width="1.5"/>
-      <!-- Petals -->
-      <path d="M50 20 C42 20 42 40 50 40 C58 40 58 20 50 20" fill="none" stroke="#2D2A2E" stroke-width="1.2"/>
-      <path d="M50 60 C42 60 42 80 50 80 C58 80 58 60 50 60" fill="none" stroke="#2D2A2E" stroke-width="1.2"/>
-      <path d="M20 50 C20 42 40 42 40 50 C40 58 20 58 20 50" fill="none" stroke="#2D2A2E" stroke-width="1.2"/>
-      <path d="M60 50 C60 42 80 42 80 50 C80 58 60 58 60 50" fill="none" stroke="#2D2A2E" stroke-width="1.2"/>
+    <svg viewBox="0 0 100 100" class="paintable-svg" style="width:100%; height:100%;">
+      <!-- Background -->
+      <rect x="0" y="0" width="100" height="100" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+      <!-- Outer circle frame -->
+      <circle cx="50" cy="50" r="44" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+      <!-- Medium circle frame -->
+      <circle cx="50" cy="50" r="32" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.5"/>
+      <!-- Inner center circle -->
+      <circle cx="50" cy="50" r="10" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="2"/>
+      <!-- Petals Layer 1 (Inner) -->
+      <path d="M50 18 C40 28 60 28 50 18 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <path d="M50 82 C40 72 60 72 50 82 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <path d="M18 50 C28 40 28 60 18 50 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <path d="M82 50 C72 40 72 60 82 50 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <!-- Petals Layer 2 (Outer corners) -->
+      <path d="M27 27 C34 34 20 48 27 27 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <path d="M73 73 C66 66 80 52 73 73 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <path d="M27 73 C34 66 20 52 27 73 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <path d="M73 27 C66 34 80 48 73 27 Z" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1.2"/>
+      <!-- Tiny corner circles -->
+      <circle cx="50" cy="10" r="3" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1"/>
+      <circle cx="50" cy="90" r="3" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1"/>
+      <circle cx="10" cy="50" r="3" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1"/>
+      <circle cx="90" cy="50" r="3" fill="#ffffff" class="paint-path" stroke="#2D2A2E" stroke-width="1"/>
     </svg>
   `
 };
@@ -865,25 +913,144 @@ function initHappyColoring() {
   const options = document.querySelectorAll('.sheet-option');
   const previewBox = document.getElementById('sheet-preview-canvas');
   const downloadBtn = document.querySelector('.btn-download-sheet');
+  const paletteColors = document.querySelectorAll('.palette-color');
 
+  let selectedColor = '#5C36C1'; // Default purple
+  let activeSheetId = 'sheet1';
+
+  // 1. Interactive Color Palette Setup
+  paletteColors.forEach(col => {
+    col.addEventListener('click', () => {
+      paletteColors.forEach(c => {
+        c.style.boxShadow = 'none';
+        c.style.border = '3px solid #FAF8F5';
+      });
+      selectedColor = col.getAttribute('data-color');
+      col.style.boxShadow = `0 0 0 2px ${selectedColor === '#ffffff' ? '#2d2a2e' : selectedColor}`;
+    });
+  });
+
+  // Highlight default active color
+  const defaultCol = document.querySelector('.palette-color[data-color="#5C36C1"]');
+  if (defaultCol) {
+    defaultCol.style.boxShadow = '0 0 0 2px #5C36C1';
+  }
+
+  // 2. Sheet Template Selection Tabs
   options.forEach(opt => {
     opt.addEventListener('click', () => {
-      options.forEach(o => o.classList.remove('active'));
+      options.forEach(o => {
+        o.classList.remove('active');
+        o.style.border = '1px solid var(--color-glass-border)';
+      });
       opt.classList.add('active');
+      opt.style.border = '2px solid #5C36C1';
 
-      const sheetId = opt.getAttribute('data-id');
-      const svgMarkup = coloringSheets[sheetId];
+      activeSheetId = opt.getAttribute('data-id');
+      const svgMarkup = coloringSheets[activeSheetId];
       if (previewBox && svgMarkup) {
         previewBox.innerHTML = svgMarkup;
       }
     });
   });
 
+  // 3. Coloring Click Action (Click to Fill Path)
+  if (previewBox) {
+    previewBox.addEventListener('click', (e) => {
+      const target = e.target.closest('.paint-path');
+      if (target) {
+        target.setAttribute('fill', selectedColor);
+        
+        // Tap animation pop
+        target.style.transition = 'none';
+        target.style.opacity = '0.65';
+        setTimeout(() => {
+          target.style.transition = 'fill 0.3s ease, opacity 0.3s ease';
+          target.style.opacity = '1';
+        }, 60);
+      }
+    });
+  }
+
+  // 4. Download and Watermark PNG Creator
   if (downloadBtn) {
     downloadBtn.addEventListener('click', () => {
-      // Simulate sheet download
-      alert("✦ Custom coloring sheet downloaded! Print and start coloring your happiness.");
-      triggerConfetti();
+      const svgElement = previewBox.querySelector('svg');
+      if (!svgElement) return;
+
+      // Loading feedback
+      downloadBtn.disabled = true;
+      const oldText = downloadBtn.textContent;
+      downloadBtn.textContent = 'Generating...';
+
+      // Serialize SVG
+      const svgString = new XMLSerializer().serializeToString(svgElement);
+      const svgBlob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+      const URL = window.URL || window.webkitURL || window;
+      const blobURL = URL.createObjectURL(svgBlob);
+
+      const image = new Image();
+      image.onload = () => {
+        const canvas = document.createElement('canvas');
+        canvas.width = 600;
+        canvas.height = 600;
+        const ctxCanvas = canvas.getContext('2d');
+
+        // Fill white background
+        ctxCanvas.fillStyle = '#ffffff';
+        ctxCanvas.fillRect(0, 0, 600, 600);
+
+        // Draw vectorized illustration
+        ctxCanvas.drawImage(image, 0, 0, 600, 520);
+
+        // Watermark Footer Block
+        ctxCanvas.fillStyle = '#fcf9fe';
+        ctxCanvas.fillRect(0, 520, 600, 80);
+
+        ctxCanvas.strokeStyle = '#ede6f5';
+        ctxCanvas.lineWidth = 1;
+        ctxCanvas.beginPath();
+        ctxCanvas.moveTo(0, 520);
+        ctxCanvas.lineTo(600, 520);
+        ctxCanvas.stroke();
+
+        // Left Art Cafe Signature
+        ctxCanvas.fillStyle = '#5C36C1';
+        ctxCanvas.font = 'bold 18px "Outfit", sans-serif';
+        ctxCanvas.textAlign = 'center';
+        ctxCanvas.fillText('LEFT ART CAFE', 300, 552);
+
+        // Tagline / License
+        ctxCanvas.fillStyle = '#7a767f';
+        ctxCanvas.font = 'italic 13px "Cormorant Garamond", serif';
+        ctxCanvas.fillText('Happiness Created Through Art ✦ www.leftartcafe.com', 300, 576);
+
+        // Download link trigger
+        const pngURL = canvas.toDataURL('image/png');
+        const link = document.createElement('a');
+        link.href = pngURL;
+        link.download = `left-art-cafe-colored-${activeSheetId}.png`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Cleanup
+        URL.revokeObjectURL(blobURL);
+        downloadBtn.disabled = false;
+        downloadBtn.textContent = oldText;
+        
+        // Confetti Celebration
+        triggerConfetti();
+      };
+
+      image.onerror = (err) => {
+        console.error('Masterpiece compile error: ', err);
+        alert('Could not download image. Please try again.');
+        downloadBtn.disabled = false;
+        downloadBtn.textContent = oldText;
+      };
+
+      image.src = blobURL;
     });
   }
 }

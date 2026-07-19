@@ -75,9 +75,18 @@ body::before {
 /* Crayon Cursor & Hiding Default Cursors on Desktop */
 @media (hover: hover) and (pointer: fine) {
   html, body, a, button, select, input, textarea, [role="button"], 
-  .faq-header, .gallery-item, .product-card, .demo-card, .wizard-option-card, .sheet-option {
+  .faq-header, .gallery-item, .product-card, .demo-card, .wizard-option-card, .sheet-option, 
+  .palette-color, .paint-path {
     cursor: none !important;
   }
+}
+
+.paint-path {
+  transition: fill 0.3s ease, opacity 0.2s ease;
+}
+
+.paint-path:hover {
+  opacity: 0.82;
 }
 
 .crayon-cursor {
