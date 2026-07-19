@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --color-purple: #6D5B97;
-  --color-purple-rgb: 109, 91, 151;
+  --color-purple: #5C36C1;
+  --color-purple-rgb: 92, 54, 193;
   --color-orange: #FF8A65;
   --color-orange-rgb: 255, 138, 101;
   --color-pink: #FF4081;
@@ -265,7 +265,7 @@ nav a:hover::after, nav a.active::after {
 }
 
 .btn-primary:hover {
-  background: #5B4A82;
+  background: color-mix(in srgb, var(--color-purple) 85%, #000);
   transform: translateY(-3px);
   box-shadow: var(--shadow-lg);
 }
