@@ -55,11 +55,11 @@ function initCursorFollower() {
   cursorContainer.innerHTML = `
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!-- Crayon wax tip (Triangle) -->
-      <path d="M 0 40 L 3.5 27.5 L 13.5 37.5 Z" class="crayon-tip-fill" fill="#FF8A65" />
+      <path d="M 0 40 L 6 26 L 14 34 Z" class="crayon-tip-fill" fill="#FF8A65" />
       <!-- Crayon body (Rectangle) -->
-      <path d="M 8.5 24.5 L 27.5 5.5 L 35.5 13.5 L 16.5 32.5 Z" class="crayon-body-fill" fill="#FF4081" />
+      <path d="M 8 24 L 22 10 L 30 18 L 16 32 Z" class="crayon-body-fill" fill="#FF4081" />
       <!-- Crayon cap (Rounded Cap) -->
-      <path d="M 30.5 2.5 L 32.5 0.5 C 35.5 -2.5 39.5 1.5 36.5 4.5 L 34.5 6.5 Z" class="crayon-cap-fill" fill="#FF4081" />
+      <path d="M 24 8 L 28 4 A 5.65 5.65 0 0 1 36 12 L 32 16 Z" class="crayon-cap-fill" fill="#FF4081" />
     </svg>
   `;
   document.body.appendChild(cursorContainer);
