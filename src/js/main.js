@@ -101,6 +101,7 @@ function initCursorFollower() {
   let prevMouseX = 0, prevMouseY = 0;
   let active = false;
   let isHovering = false;
+  let distanceDrawn = 0;
   const trailSegments = [];
 
   // Cycle crayon color and update SVG fills
@@ -130,12 +131,19 @@ function initCursorFollower() {
     cursorContainer.style.left = `${mouseX}px`;
     cursorContainer.style.top = `${mouseY}px`;
 
-    // Draw textured crayon line only when hovering over interactive elements
-    if (isHovering && prevMouseX !== 0 && prevMouseY !== 0) {
+    // Draw textured crayon line as the mouse moves across the entire site
+    if (prevMouseX !== 0 && prevMouseY !== 0) {
       const dx = mouseX - prevMouseX;
       const dy = mouseY - prevMouseY;
       const dist = Math.sqrt(dx * dx + dy * dy);
       if (dist > 1.5) {
+        distanceDrawn += dist;
+        // Cycle colors every 200 pixels of movement for a rainbow gradient effect
+        if (distanceDrawn > 200) {
+          cycleCrayonColor();
+          distanceDrawn = 0;
+        }
+
         trailSegments.push({
           x1: prevMouseX,
           y1: prevMouseY,
