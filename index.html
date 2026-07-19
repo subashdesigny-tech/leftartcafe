@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Left Art Cafe - Happiness Through Art</title>
+  <meta name="description" content="An interactive art experience platform selling premium DIY paint kits, creative workshops, custom canvas portraits, and stationery for all ages.">
+  <link rel="stylesheet" href="./src/css/style.css?v=1.1">
+  <link rel="icon" type="image/png" href="./Favicon.png">
+</head>
+<body>
+
+  <!-- Sticky Header Navigation -->
+  <header>
+    <div class="container">
+      <div class="nav-container">
+        <a href="#hero" class="logo" aria-label="Left Art Cafe Home">
+          <img src="./logo.png" class="logo-img" alt="Left Art Cafe">
+        </a>
+        <nav class="nav-links-list">
+          <ul>
+            <li><a href="#section-what-is" class="active">About</a></li>
+            <li><a href="#section-choose-exp">Experiences</a></li>
+            <li><a href="#section-shop">Shop</a></li>
+            <li><a href="#section-coloring">Happy Coloring</a></li>
+            <li><a href="#section-gallery">Gallery</a></li>
+            <li><a href="#section-faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn-cart" aria-label="Open Shopping Cart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"/>
+              <circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+            <span class="cart-count" style="display: none;">0</span>
+          </button>
+          <button class="btn btn-primary btn-book-workshop" data-package="General Workshop">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text reveal-left">
+          <h1 class="font-rounded">
+            Happiness
+            <span>Through Art</span>
+          </h1>
+          <p>Art experiences, DIY kits, creative workshops and personalized artworks that inspire creativity for every age.</p>
+          <div class="hero-ctas">
+            <button class="btn btn-primary btn-book-workshop" data-package="Hero Selection">Book Workshop</button>
+            <a href="#section-shop" class="btn btn-secondary">Explore Products</a>
+          </div>
+        </div>
+        
+        <div class="hero-graphics reveal">
+          <div class="hero-blob hero-blob-1"></div>
+          <div class="hero-blob hero-blob-2"></div>
+          <div class="hero-blob hero-blob-3"></div>
+          
+          <!-- Immersive illustration box -->
+          <div class="hero-main-img">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+              <rect width="500" height="500" fill="#FAF8F5"/>
+              <defs>
+                <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#7E57C2" />
+                  <stop offset="100%" stop-color="#5E35B1" />
+                </linearGradient>
+                <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FFAB91" />
+                  <stop offset="100%" stop-color="#FF7043" />
+                </linearGradient>
+              </defs>
+              <!-- Organic paint blobs -->
+              <path d="M80 120 C120 70, 200 80, 240 140 C280 200, 200 320, 160 300 C120 280, 40 170, 80 120 Z" fill="url(#purpleGrad)" opacity="0.75" />
+              <path d="M300 240 C360 200, 440 240, 420 320 C400 400, 280 440, 260 360 C240 280, 240 280, 300 240 Z" fill="url(#orangeGrad)" opacity="0.6" />
+              <circle cx="280" cy="180" r="90" fill="#81D4FA" opacity="0.5" />
+              
+              <!-- Simple hand drawn figures painting together -->
+              <g stroke="#2D2A2E" stroke-width="4" stroke-linecap="round" fill="none">
+                <!-- Easel -->
+                <line x1="250" y1="120" x2="210" y2="380" />
+                <line x1="250" y1="120" x2="290" y2="380" />
+                <line x1="250" y1="180" x2="260" y2="400" />
+                <line x1="180" y1="280" x2="320" y2="280" stroke-width="6" />
+                <!-- Canvas Board -->
+                <rect x="200" y="160" width="100" height="90" fill="#FFFFFF" stroke-width="4" rx="4" />
+                <!-- Happy Sun painting on canvas -->
+                <circle cx="250" cy="200" r="12" fill="#FFE082" stroke-width="2" />
+                <path d="M220 230 Q250 215 280 230" stroke-width="2"/>
+                
+                <!-- Kid drawing -->
+                <circle cx="150" cy="310" r="16" fill="#FFF" />
+                <path d="M150 326 L150 390 L130 430 M150 390 L170 430" />
+                <path d="M150 345 L190 310 L210 210" /> <!-- arm reaching to canvas with brush -->
+                
+                <!-- Adult guide standing -->
+                <circle cx="350" cy="260" r="20" fill="#FFF" />
+                <path d="M350 280 L350 370 L330 430 M350 370 L370 430" />
+                <path d="M350 300 Q310 290 280 260" /> <!-- arm pointing to canvas -->
+              </g>
+            </svg>
+          </div>
+
+          <!-- Doodles / Stickers -->
+          <div class="floating-sticker sticker-1">
+            <svg width="60" height="60" viewBox="0 0 60 60">
+              <path d="M30 5 L35 20 L50 20 L38 30 L43 45 L30 35 L17 45 L22 30 L10 20 L25 20 Z" fill="#FFE082" stroke="#2D2A2E" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="floating-sticker sticker-2">
+            <svg width="50" height="50" viewBox="0 0 50 50">
+              <rect x="10" y="10" width="30" height="30" rx="8" fill="#FF8A65" stroke="#2D2A2E" stroke-width="2" transform="rotate(15 25 25)"/>
+            </svg>
+          </div>
+          <div class="floating-sticker sticker-3">
+            <svg width="45" height="45" viewBox="0 0 45 45">
+              <circle cx="22.5" cy="22.5" r="18" fill="#81D4FA" stroke="#2D2A2E" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: What is Left Art Cafe? -->
+  <section class="reveal" id="section-what-is">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="font-rounded" style="color: var(--color-pink); font-weight:700; text-transform:uppercase; font-size:0.9rem; letter-spacing:0.1em; display:block; margin-bottom:12px;">Our Philosophy</span>
+          <h2>Happiness Through Art</h2>
+          <p>We don't just teach art workshops. We create an escape, a calm creative space where every product, workshop, portrait, and brush stroke helps you reconnect with yourself and your loved ones.</p>
+          <p>Left Art Cafe is built for everyone. No matter your age, experience, or skill level, creativity is a journey of joy, mindfulness, and screen-free discovery.</p>
+        </div>
+        <div class="about-canvas-container">
+          <canvas id="sketch-canvas"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Who is this for? -->
+  <section class="reveal" id="section-who-is">
+    <div class="container">
+      <h2 class="section-title font-rounded">Who is this for?</h2>
+      <p class="section-subtitle">A creative community tailored for every phase of life. Click any card to dive into dedicated experiences.</p>
+      
+      <div class="demographics-grid">
+        <div class="demo-card demo-card-kids" data-type="kids">
+          <div class="demo-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="8" cy="9" r="1.5"/>
+              <circle cx="16" cy="9" r="1.5"/>
+              <path d="M8 14 Q12 18 16 14" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Kids</h3>
+          <p>Sensory painting, custom wooden toys, and structured creative play zones.</p>
+          <span class="demo-expand-link">Explore Activities &rarr;</span>
+        </div>
+
+        <div class="demo-card demo-card-adults" data-type="adults">
+          <div class="demo-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 12c-4.42 0-8 3.58-8 8h16c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </div>
+          <h3>Adults</h3>
+          <p>Mindful sip-and-paint nights, studio canvases, and digital detox zones.</p>
+          <span class="demo-expand-link">Explore Activities &rarr;</span>
+        </div>
+
+        <div class="demo-card demo-card-families" data-type="families">
+          <div class="demo-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+            </svg>
+          </div>
+          <h3>Families</h3>
+          <p>Modular joint canvas paintings and weekend bonding craft workshops.</p>
+          <span class="demo-expand-link">Explore Activities &rarr;</span>
+        </div>
+
+        <div class="demo-card demo-card-corporate" data-type="corporate">
+          <div class="demo-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm6 12h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm8 12h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2z"/>
+            </svg>
+          </div>
+          <h3>Corporate Teams</h3>
+          <p>Stress relief paint sessions and large team-puzzle collaborative murals.</p>
+          <span class="demo-expand-link">Explore Activities &rarr;</span>
+        </div>
+
+        <div class="demo-card demo-card-schools" data-type="schools">
+          <div class="demo-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z M5.89 12.5L12 15.8l6.11-3.3L12 9.2 5.89 12.5z"/>
+            </svg>
+          </div>
+          <h3>Schools</h3>
+          <p>Art days, holiday camps, creative student clubs, and training modules.</p>
+          <span class="demo-expand-link">Explore Activities &rarr;</span>
+        </div>
+
+        <div class="demo-card demo-card-seniors" data-type="seniors">
+          <div class="demo-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
+            </svg>
+          </div>
+          <h3>Senior Citizens</h3>
+          <p>Mindful fluid styling, water-coloring, and cozy memory book scrapbooking.</p>
+          <span class="demo-expand-link">Explore Activities &rarr;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Choose Your Experience -->
+  <section class="reveal" id="section-choose-exp">
+    <div class="container">
+      <h2 class="section-title font-rounded">Choose Your Experience</h2>
+      <p class="section-subtitle">Pick the category that calls your inner artist. Click the tabs below to explore detail blocks.</p>
+      
+      <div class="experience-tabs-container">
+        <div class="experience-tabs-header">
+          <button class="experience-tab-btn active" data-target="classes">Art Classes</button>
+          <button class="experience-tab-btn" data-target="kits">DIY Kits</button>
+          <button class="experience-tab-btn" data-target="portraits">Portraits</button>
+          <button class="experience-tab-btn" data-target="events">Event Themes</button>
+          <button class="experience-tab-btn" data-target="gifts">Gift Ideas</button>
+        </div>
+
+        <div class="experience-tab-content active" id="exp-tab-classes">
+          <div class="exp-desc-card">
+            <h3>Art Classes & Jams</h3>
+            <div class="exp-tag-list">
+              <span class="exp-tag">Acrylics</span>
+              <span class="exp-tag">Texture paste</span>
+              <span class="exp-tag">Fluid art</span>
+              <span class="exp-tag">Palette knife</span>
+            </div>
+            <p>Our weekly painting classes provide comfortable setup easels, paints, and guide instructors. From learning textured modeling clay patterns to fluid color blending, classes are built for maximum fun and stress relief.</p>
+            <button class="btn btn-primary btn-book-workshop" data-package="Weekly Art Class">Reserve Art Table</button>
+          </div>
+          <div class="exp-visual-box">
+            <svg viewBox="0 0 400 300">
+              <rect width="400" height="300" fill="#E8F5E9"/>
+              <circle cx="200" cy="150" r="80" fill="#81C784" opacity="0.4"/>
+              <path d="M120 220 Q200 120 280 220" fill="none" stroke="#2D2A2E" stroke-width="4"/>
+              <!-- Easel drawing inside visual -->
+              <line x1="200" y1="50" x2="200" y2="250" stroke="#2D2A2E" stroke-width="3"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="experience-tab-content" id="exp-tab-kits">
+          <div class="exp-desc-card">
+            <h3>DIY Kits at Home</h3>
+            <div class="exp-tag-list">
+              <span class="exp-tag">Box kits</span>
+              <span class="exp-tag">Easy setup</span>
+              <span class="exp-tag">Included paints</span>
+              <span class="exp-tag">Video guides</span>
+            </div>
+            <p>Bring Left Art Cafe straight to your kitchen table. Our DIY kits come equipped with premium MDF panels, brushes, organic paint pots, templates, and video guides to let you create at your own pace.</p>
+            <a href="#section-shop" class="btn btn-primary">Browse Shop</a>
+          </div>
+          <div class="exp-visual-box">
+            <svg viewBox="0 0 400 300">
+              <rect width="400" height="300" fill="#FFF3E0"/>
+              <!-- Box parcel drawing -->
+              <rect x="130" y="90" width="140" height="120" rx="10" fill="#FFE082" stroke="#2D2A2E" stroke-width="4"/>
+              <line x1="130" y1="130" x2="270" y2="130" stroke="#2D2A2E" stroke-width="3"/>
+              <path d="M200 90 L200 170" stroke="#2D2A2E" stroke-width="3"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="experience-tab-content" id="exp-tab-portraits">
+          <div class="exp-desc-card">
+            <h3>Custom Canvas Portraits</h3>
+            <div class="exp-tag-list">
+              <span class="exp-tag">Personalized</span>
+              <span class="exp-tag">Studio art</span>
+              <span class="exp-tag">Hand painted</span>
+              <span class="exp-tag">Unique gift</span>
+            </div>
+            <p>Turn your favorite memories and family photographs into beautiful hand-painted textured portraits. Perfect as high-end gifts, anniversaries, or unique wall additions.</p>
+            <button class="btn btn-primary btn-book-workshop" data-package="Custom Portrait Booking">Order Custom Portrait</button>
+          </div>
+          <div class="exp-visual-box">
+            <svg viewBox="0 0 400 300">
+              <rect width="400" height="300" fill="#F3E5F5"/>
+              <circle cx="200" cy="130" r="50" fill="#FFF" stroke="#2D2A2E" stroke-width="3"/>
+              <path d="M140 240 C140 180, 260 180, 260 240" fill="none" stroke="#2D2A2E" stroke-width="3"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="experience-tab-content" id="exp-tab-events">
+          <div class="exp-desc-card">
+            <h3>Custom Event Themes</h3>
+            <div class="exp-tag-list">
+              <span class="exp-tag">Birthdays</span>
+              <span class="exp-tag">Bachelorette</span>
+              <span class="exp-tag">Pop painting</span>
+              <span class="exp-tag">Custom decorations</span>
+            </div>
+            <p>From kids birthday painting circles to corporate bachelorette parties, we craft matching customized coloring boards, paints, banners, and keepsake gift certificates.</p>
+            <button class="btn btn-primary btn-book-workshop" data-package="Event Booking">Plan An Event</button>
+          </div>
+          <div class="exp-visual-box">
+            <svg viewBox="0 0 400 300">
+              <rect width="400" height="300" fill="#E1F5FE"/>
+              <circle cx="150" cy="120" r="30" fill="#4FC3F7" opacity="0.6"/>
+              <circle cx="250" cy="120" r="30" fill="#FF80AB" opacity="0.6"/>
+              <circle cx="200" cy="200" r="40" fill="#FFE082" opacity="0.6"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="experience-tab-content" id="exp-tab-gifts">
+          <div class="exp-desc-card">
+            <h3>Mindful Gift Boxes</h3>
+            <div class="exp-tag-list">
+              <span class="exp-tag">Gift card</span>
+              <span class="exp-tag">DIY collection</span>
+              <span class="exp-tag">Art stationery</span>
+              <span class="exp-tag">Eco-friendly</span>
+            </div>
+            <p>Send happiness in a envelope or box. Gift a workshop booking card, a Happy Coloring kit pack, or customized planners to colleagues, friends, or school teachers.</p>
+            <a href="#section-shop" class="btn btn-primary">Shop Gift Boxes</a>
+          </div>
+          <div class="exp-visual-box">
+            <svg viewBox="0 0 400 300">
+              <rect width="400" height="300" fill="#FCE4EC"/>
+              <!-- Heart card shape -->
+              <path d="M200 210 L160 170 A30 30 0 0 1 200 130 A30 30 0 0 1 240 170 Z" fill="#FF80AB" stroke="#2D2A2E" stroke-width="4"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Featured Experiences -->
+  <section class="reveal" id="section-featured">
+    <div class="container">
+      <h2 class="section-title font-rounded">Featured Experiences</h2>
+      <p class="section-subtitle">Take a glance at our popular creative kits and workshop guides. Swipe to scroll.</p>
+      
+      <div class="featured-scroll-wrapper">
+        <!-- Card 1 -->
+        <div class="featured-card" data-type="coloring">
+          <div class="feat-img-box">
+            <svg viewBox="0 0 200 150">
+              <rect width="200" height="150" fill="#FFF8E1"/>
+              <path d="M30 110 C70 50, 130 50, 170 110" fill="none" stroke="#6D5B97" stroke-width="3" stroke-dasharray="5 5"/>
+            </svg>
+            <span class="feat-difficulty easy">Easy</span>
+          </div>
+          <div class="feat-body">
+            <h3>Happy Coloring Kit</h3>
+            <div class="feat-specs">
+              <span>Ages 3+</span> • <span>2-3 Hours</span>
+            </div>
+            <p class="feat-desc">Unwind with premium heavyweight watercolor coloring sheets depicting peaceful landscapes.</p>
+            <div class="feat-footer">
+              <span class="feat-price">$18.00</span>
+              <div style="display:flex; gap:8px;">
+                <button class="btn btn-secondary btn-feat-details" style="padding:6px 14px; font-size:0.8rem;">Details</button>
+                <button class="btn btn-primary btn-feat-book" style="padding:6px 14px; font-size:0.8rem;">Book</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="featured-card" data-type="paintplay">
+          <div class="feat-img-box">
+            <svg viewBox="0 0 200 150">
+              <rect width="200" height="150" fill="#E8F5E9"/>
+              <!-- Wooden toy sketch -->
+              <rect x="60" y="45" width="80" height="60" rx="8" fill="#A5D6A7" stroke="#2D2A2E" stroke-width="3"/>
+            </svg>
+            <span class="feat-difficulty easy">Easy</span>
+          </div>
+          <div class="feat-body">
+            <h3>Paint & Play Toy Kit</h3>
+            <div class="feat-specs">
+              <span>Ages 4+</span> • <span>1.5 Hours</span>
+            </div>
+            <p class="feat-desc">Paint tactile wooden shapes and toy models. A screen-free, rewarding toy crafting module for children.</p>
+            <div class="feat-footer">
+              <span class="feat-price">$24.00</span>
+              <div style="display:flex; gap:8px;">
+                <button class="btn btn-secondary btn-feat-details" style="padding:6px 14px; font-size:0.8rem;">Details</button>
+                <button class="btn btn-primary btn-feat-book" style="padding:6px 14px; font-size:0.8rem;">Book</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="featured-card" data-type="photoframe">
+          <div class="feat-img-box">
+            <svg viewBox="0 0 200 150">
+              <rect width="200" height="150" fill="#E1F5FE"/>
+              <rect x="50" y="30" width="100" height="90" fill="#81D4FA" stroke="#2D2A2E" stroke-width="3"/>
+            </svg>
+            <span class="feat-difficulty medium">Medium</span>
+          </div>
+          <div class="feat-body">
+            <h3>Photo Frame Paint</h3>
+            <div class="feat-specs">
+              <span>Ages 6+</span> • <span>2 Hours</span>
+            </div>
+            <p class="feat-desc">Customize an elegant wooden photo frame with rich colors, adhesive crystals, and texture clay paste.</p>
+            <div class="feat-footer">
+              <span class="feat-price">$21.00</span>
+              <div style="display:flex; gap:8px;">
+                <button class="btn btn-secondary btn-feat-details" style="padding:6px 14px; font-size:0.8rem;">Details</button>
+                <button class="btn btn-primary btn-feat-book" style="padding:6px 14px; font-size:0.8rem;">Book</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="featured-card" data-type="fridge">
+          <div class="feat-img-box">
+            <svg viewBox="0 0 200 150">
+              <rect width="200" height="150" fill="#FCE4EC"/>
+              <rect x="70" y="45" width="60" height="60" fill="#FF80AB" stroke="#2D2A2E" stroke-width="3"/>
+            </svg>
+            <span class="feat-difficulty easy">Easy</span>
+          </div>
+          <div class="feat-body">
+            <h3>Fridge Magnet Kit</h3>
+            <div class="feat-specs">
+              <span>Ages 5+</span> • <span>1.5 Hours</span>
+            </div>
+            <p class="feat-desc">Craft and paint customized wooden blocks with pre-backed magnetic pads to style your fridge.</p>
+            <div class="feat-footer">
+              <span class="feat-price">$16.00</span>
+              <div style="display:flex; gap:8px;">
+                <button class="btn btn-secondary btn-feat-details" style="padding:6px 14px; font-size:0.8rem;">Details</button>
+                <button class="btn btn-primary btn-feat-book" style="padding:6px 14px; font-size:0.8rem;">Book</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="featured-card" data-type="canvas">
+          <div class="feat-img-box">
+            <svg viewBox="0 0 200 150">
+              <rect width="200" height="150" fill="#E8EAF6"/>
+              <line x1="100" y1="30" x2="60" y2="120" stroke="#2D2A2E" stroke-width="3"/>
+              <line x1="100" y1="30" x2="140" y2="120" stroke="#2D2A2E" stroke-width="3"/>
+            </svg>
+            <span class="feat-difficulty advanced">Advanced</span>
+          </div>
+          <div class="feat-body">
+            <h3>Canvas Portrait Painting</h3>
+            <div class="feat-specs">
+              <span>Ages 12+</span> • <span>3-4 Hours</span>
+            </div>
+            <p class="feat-desc">Learn stretched-canvas painting techniques, blending colors, drawing silhouettes, and framing.</p>
+            <div class="feat-footer">
+              <span class="feat-price">$32.00</span>
+              <div style="display:flex; gap:8px;">
+                <button class="btn btn-secondary btn-feat-details" style="padding:6px 14px; font-size:0.8rem;">Details</button>
+                <button class="btn btn-primary btn-feat-book" style="padding:6px 14px; font-size:0.8rem;">Book</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Shop -->
+  <section class="reveal" id="section-shop">
+    <div class="container">
+      <h2 class="section-title font-rounded">Shop DIY Kits</h2>
+      <p class="section-subtitle">Pick from our premium packaging DIY kits loaded with instruction guides. Hover to see what's inside.</p>
+      
+      <div class="shop-grid">
+        <!-- Prod 1 -->
+        <div class="product-card">
+          <div class="prod-img-box">
+            <svg viewBox="0 0 200 200">
+              <rect width="200" height="200" fill="#FFF9C4"/>
+              <circle cx="100" cy="100" r="50" fill="#FFE082"/>
+            </svg>
+            <div class="prod-kit-overlay">
+              <h4>Inside the Box:</h4>
+              <ul>
+                <li>2 Coloring Sheets (Canvas)</li>
+                <li>12 Non-toxic crayons</li>
+                <li>Creative coloring guide</li>
+                <li>Doodle sticker pack</li>
+              </ul>
+            </div>
+          </div>
+          <div class="prod-body">
+            <span class="prod-difficulty">Easy</span>
+            <h3>Happy Coloring Kit</h3>
+            <div class="prod-footer">
+              <span class="prod-price">$18.00</span>
+              <button class="btn btn-primary btn-add-cart" data-id="kit1">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prod 2 -->
+        <div class="product-card">
+          <div class="prod-img-box">
+            <svg viewBox="0 0 200 200">
+              <rect width="200" height="200" fill="#E8F5E9"/>
+              <rect x="50" y="50" width="100" height="100" rx="10" fill="#A5D6A7"/>
+            </svg>
+            <div class="prod-kit-overlay">
+              <h4>Inside the Box:</h4>
+              <ul>
+                <li>4 Wooden toy bases</li>
+                <li>6 Acrylic pots (Primary)</li>
+                <li>2 Professional brushes</li>
+                <li>Craft guide map</li>
+              </ul>
+            </div>
+          </div>
+          <div class="prod-body">
+            <span class="prod-difficulty">Easy</span>
+            <h3>Paint & Play Kit</h3>
+            <div class="prod-footer">
+              <span class="prod-price">$24.00</span>
+              <button class="btn btn-primary btn-add-cart" data-id="kit2">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prod 3 -->
+        <div class="product-card">
+          <div class="prod-img-box">
+            <svg viewBox="0 0 200 200">
+              <rect width="200" height="200" fill="#FCE4EC"/>
+              <polygon points="100,30 150,150 50,150" fill="#FF80AB"/>
+            </svg>
+            <div class="prod-kit-overlay">
+              <h4>Inside the Box:</h4>
+              <ul>
+                <li>6 Magnet wood panels</li>
+                <li>8 Dynamic color pots</li>
+                <li>1 Premium fine brush</li>
+                <li>Idea illustration sheet</li>
+              </ul>
+            </div>
+          </div>
+          <div class="prod-body">
+            <span class="prod-difficulty">Easy</span>
+            <h3>Fridge Magnet Kit</h3>
+            <div class="prod-footer">
+              <span class="prod-price">$16.00</span>
+              <button class="btn btn-primary btn-add-cart" data-id="kit3">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prod 4 -->
+        <div class="product-card">
+          <div class="prod-img-box">
+            <svg viewBox="0 0 200 200">
+              <rect width="200" height="200" fill="#E8EAF6"/>
+              <rect x="60" y="40" width="80" height="120" fill="#9FA8DA"/>
+            </svg>
+            <div class="prod-kit-overlay">
+              <h4>Inside the Box:</h4>
+              <ul>
+                <li>1 Stretched Cotton Canvas</li>
+                <li>12 Acrylic paints tubes</li>
+                <li>3 Painting brushes</li>
+                <li>Table display easel</li>
+              </ul>
+            </div>
+          </div>
+          <div class="prod-body">
+            <span class="prod-difficulty">Advanced</span>
+            <h3>Canvas Portrait Kit</h3>
+            <div class="prod-footer">
+              <span class="prod-price">$32.00</span>
+              <button class="btn btn-primary btn-add-cart" data-id="kit4">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: Art Journey Timeline -->
+  <section class="reveal" id="section-journey">
+    <div class="container">
+      <h2 class="section-title font-rounded">Art Journey</h2>
+      <p class="section-subtitle">How we deliver creativity and happy memories straight to your doorstep.</p>
+      
+      <div class="timeline-container">
+        <div class="timeline-path"></div>
+        
+        <!-- Step 1 -->
+        <div class="timeline-step">
+          <div class="timeline-card">
+            <h3>1. Choose Activity</h3>
+            <p>Browse our catalog of themed workshops, classes, and DIY kits online. Pick one that matches your vibe.</p>
+          </div>
+          <div class="timeline-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <div class="timeline-illustration">
+            <svg viewBox="0 0 160 120"><rect width="160" height="120" fill="#E0F2F1"/><circle cx="80" cy="60" r="30" fill="#26A69A" opacity="0.4"/></svg>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-step">
+          <div class="timeline-card">
+            <h3>2. Receive Kit</h3>
+            <p>Our custom package arrives at your home. Packed inside are all required paints, brushes, canvas boards, and codes for guides.</p>
+          </div>
+          <div class="timeline-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-9 3h2v2h-2V7zm0 4h2v2h-2v-2zm-4-4h2v2H7V7zm0 4h2v2H7v-2zm10 6H7v-2h10v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/></svg>
+          </div>
+          <div class="timeline-illustration">
+            <svg viewBox="0 0 160 120"><rect width="160" height="120" fill="#FFF3E0"/><rect x="50" y="30" width="60" height="60" fill="#FFB74D" opacity="0.5"/></svg>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-step">
+          <div class="timeline-card">
+            <h3>3. Paint Together</h3>
+            <p>Sip tea, put on soft music, open your paint pots, and create either individually or alongside friends and family.</p>
+          </div>
+          <div class="timeline-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.22 19.58 10.57 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
+          </div>
+          <div class="timeline-illustration">
+            <svg viewBox="0 0 160 120"><rect width="160" height="120" fill="#FCE4EC"/><path d="M50 80 Q80 30 110 80" fill="none" stroke="#FF4081" stroke-width="4"/></svg>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-step">
+          <div class="timeline-card">
+            <h3>4. Display Proudly</h3>
+            <p>Varnish your artwork and display it on your wall, fridge, or bedside table to remind yourself of peaceful, happy hours.</p>
+          </div>
+          <div class="timeline-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"/></svg>
+          </div>
+          <div class="timeline-illustration">
+            <svg viewBox="0 0 160 120"><rect width="160" height="120" fill="#E8EAF6"/><rect x="40" y="30" width="80" height="60" fill="#7986CB" opacity="0.4" rx="4"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: Why Left Art Cafe? (Interactive Cards) -->
+  <section class="reveal" id="section-why">
+    <div class="container">
+      <h2 class="section-title font-rounded">Why Left Art Cafe?</h2>
+      <p class="section-subtitle">What sets our creative experiences apart from a typical art tutorial. Hover cards to reveal core layers.</p>
+      
+      <div class="why-grid">
+        <!-- Card 1 -->
+        <div class="why-card">
+          <div class="why-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 22h20L12 2z"/></svg>
+          </div>
+          <h3>Premium Materials</h3>
+          <p>We source heavy cotton stretched canvases, MDF, non-toxic colors, and high density brushes.</p>
+          <div class="why-details-drawer">
+            No cheap plastics or toxic paints. Our items are chosen to ensure the visual results look high-end, vibrant, and preserve for decades.
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="why-card">
+          <div class="why-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          </div>
+          <h3>Creative Learning</h3>
+          <p>We teach drawing techniques by simplifying shapes, making complex art approachable.</p>
+          <div class="why-details-drawer">
+            Our step-by-step videos and canvas drawings give beginners structure while encouraging custom creative modifications.
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="why-card">
+          <div class="why-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 0 0-9 9h3a6 6 0 0 1 12 0h3a9 9 0 0 0-9-9z"/></svg>
+          </div>
+          <h3>Mindfulness</h3>
+          <p>Art acts as active meditation. Painting reduces cortisol levels and boosts happiness.</p>
+          <div class="why-details-drawer">
+            By shifting focus from digital screens to hand-eye brush blending, users report immediate mental relief and clarity.
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="why-card">
+          <div class="why-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          </div>
+          <h3>Family Bonding</h3>
+          <p>Collaborative modules designed specifically for parent-and-child teamwork.</p>
+          <div class="why-details-drawer">
+            Instead of staring at individual tablet screens, families paint adjacent canvas frames to join them into one master memory.
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="why-card">
+          <div class="why-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 16H5V5h14v14z"/></svg>
+          </div>
+          <h3>Screen-free Fun</h3>
+          <p>A fun, tactile physical kit to give children and adults an escape from devices.</p>
+          <div class="why-details-drawer">
+            Our kits promote tactile craft exploration, keeping kids engaged and creating physically for hours.
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="why-card">
+          <div class="why-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+          </div>
+          <h3>Personal Guidance</h3>
+          <p>Get tips directly from lead art designers via quick video links.</p>
+          <div class="why-details-drawer">
+            We provide contact links to chat directly with workshop managers if you ever get stuck or want advice.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: Happy Coloring™ Dedicated Brand -->
+  <section class="reveal" id="section-coloring">
+    <div class="container">
+      <div class="coloring-banner">
+        <div class="color-text">
+          <span class="font-rounded" style="color: var(--color-pink); font-weight:700; text-transform:uppercase; font-size:0.9rem; letter-spacing:0.1em; display:block; margin-bottom:12px;">Dedicated Brand</span>
+          <h2 class="font-rounded">Happy Coloring™</h2>
+          <p>Explore our exclusive collection of hand-drawn coloring sheets. Subscribe to receive monthly themes directly in your inbox, and download a free sheet below to start painting right now!</p>
+          
+          <div class="sheet-selector">
+            <h4>Select a Coloring Theme:</h4>
+            <div class="sheet-grid">
+              <button class="sheet-option active" data-id="sheet1" aria-label="Cozy Mountains Theme">
+                <svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#FAF8F5"/><circle cx="20" cy="18" r="8" fill="none" stroke="#2D2A2E" stroke-width="1.5"/></svg>
+              </button>
+              <button class="sheet-option" data-id="sheet2" aria-label="Easel Art Studio Theme">
+                <svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#FAF8F5"/><rect x="12" y="10" width="16" height="20" fill="none" stroke="#2D2A2E" stroke-width="1.5"/></svg>
+              </button>
+              <button class="sheet-option" data-id="sheet3" aria-label="Floral Mandala Theme">
+                <svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#FAF8F5"/><circle cx="20" cy="20" r="12" fill="none" stroke="#2D2A2E" stroke-width="1.5" stroke-dasharray="2 2"/></svg>
+              </button>
+            </div>
+          </div>
+          
+          <div style="display:flex; gap:16px;">
+            <button class="btn btn-primary btn-download-sheet">Download Coloring Sheet</button>
+            <button class="btn btn-secondary btn-book-workshop" data-package="Happy Coloring Subscription">Join Monthly Club</button>
+          </div>
+        </div>
+
+        <div class="color-visual-box">
+          <h4 style="font-family: var(--font-sans); font-size:1rem; margin-bottom:12px; font-weight:600; text-align:center; color: var(--color-purple);">Coloring Sheet Preview</h4>
+          <div class="preview-canvas-box" id="sheet-preview-canvas">
+            <svg viewBox="0 0 100 100">
+              <rect width="100" height="100" fill="none" stroke="#2D2A2E" stroke-width="2"/>
+              <circle cx="50" cy="40" r="18" fill="none" stroke="#2D2A2E" stroke-width="1.5"/>
+              <path d="M20 75 Q40 50 50 62 T80 75" fill="none" stroke="#2D2A2E" stroke-width="1.5"/>
+              <path d="M50 40 L50 90" fill="none" stroke="#2D2A2E" stroke-width="1" stroke-dasharray="2 2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: Workshop Gallery (Pinterest Grid) -->
+  <section class="reveal" id="section-gallery">
+    <div class="container">
+      <h2 class="section-title font-rounded">Workshop Gallery</h2>
+      <p class="section-subtitle">Real moments of happiness, paint-smeared hands, and completed masterpieces from our community.</p>
+      
+      <div class="gallery-grid">
+        <!-- Item 1 -->
+        <div class="gallery-item">
+          <svg viewBox="0 0 300 400"><rect width="300" height="400" fill="#FFE082"/><circle cx="150" cy="200" r="80" fill="#FF8A65" opacity="0.6"/></svg>
+          <div class="gallery-hover-overlay">
+            <p>Family Paint Day ✦ Weekend Jam</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="gallery-item">
+          <svg viewBox="0 0 300 240"><rect width="300" height="240" fill="#A5D6A7"/><rect x="60" y="40" width="180" height="160" fill="#FFF" rx="10"/></svg>
+          <div class="gallery-hover-overlay">
+            <p>Kids Crafting Coasters</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="gallery-item">
+          <svg viewBox="0 0 300 320"><rect width="300" height="320" fill="#81D4FA"/><circle cx="150" cy="160" r="60" fill="#FFF"/></svg>
+          <div class="gallery-hover-overlay">
+            <p>Mindfulness Adult Class</p>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="gallery-item">
+          <svg viewBox="0 0 300 450"><rect width="300" height="450" fill="#FF80AB"/><path d="M50 350 L250 350 L150 150 Z" fill="#FFF"/></svg>
+          <div class="gallery-hover-overlay">
+            <p>Corporate Team Mural</p>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="gallery-item">
+          <svg viewBox="0 0 300 280"><rect width="300" height="280" fill="#E8EAF6"/><circle cx="100" cy="140" r="40" fill="#7986CB"/><circle cx="200" cy="140" r="40" fill="#FF8A65"/></svg>
+          <div class="gallery-hover-overlay">
+            <p>Canvas Blending Practice</p>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="gallery-item">
+          <svg viewBox="0 0 300 350"><rect width="300" height="350" fill="#E1F5FE"/><rect x="80" y="80" width="140" height="190" rx="8" fill="#4FC3F7"/></svg>
+          <div class="gallery-hover-overlay">
+            <p>Custom Portrait Order</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: Corporate Experiences -->
+  <section class="reveal" id="section-corporate">
+    <div class="container">
+      <div class="experience-intro-section">
+        <div class="experience-text-box">
+          <span class="font-rounded" style="color: var(--color-blue); font-weight:700; text-transform:uppercase; font-size:0.9rem; letter-spacing:0.1em; display:block; margin-bottom:12px;">Workshops & Teams</span>
+          <h2>Corporate Experiences</h2>
+          <p>Paint your teamwork. Our tailored corporate painting sessions act as a mental reset, de-stress therapy, and bonding agent. We arrange giant modular puzzle murals where every employee paints an individual panel, and we join them together to decorate the office lobby.</p>
+          
+          <div class="features-highlight-grid">
+            <div class="feat-highlight-item">
+              <svg class="feat-highlight-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <div class="feat-highlight-text">
+                <h4>Stress Relief</h4>
+                <p>94% of teams report feeling refreshed and calm post-session.</p>
+              </div>
+            </div>
+            <div class="feat-highlight-item">
+              <svg class="feat-highlight-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <div class="feat-highlight-text">
+                <h4>Employee Bonding</h4>
+                <p>Collaborative coloring builds organic conversations.</p>
+              </div>
+            </div>
+          </div>
+          
+          <button class="btn btn-primary btn-book-workshop" data-package="Corporate Team Experience">Request Proposal Form</button>
+        </div>
+        <div class="experience-graphics-box">
+          <svg viewBox="0 0 400 320">
+            <rect width="400" height="320" fill="#E1F5FE"/>
+            <!-- Grid mural drawing -->
+            <rect x="40" y="40" width="140" height="110" fill="#81D4FA" stroke="#2D2A2E" stroke-width="2"/>
+            <rect x="220" y="40" width="140" height="110" fill="#FF80AB" stroke="#2D2A2E" stroke-width="2"/>
+            <rect x="40" y="170" width="140" height="110" fill="#FFE082" stroke="#2D2A2E" stroke-width="2"/>
+            <rect x="220" y="170" width="140" height="110" fill="#81C784" stroke="#2D2A2E" stroke-width="2"/>
+            <circle cx="200" cy="160" r="40" fill="#FAF8F5" stroke="#2D2A2E" stroke-width="3"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 11: Birthday Experiences -->
+  <section class="reveal" id="section-birthdays">
+    <div class="container">
+      <div class="experience-intro-section reverse">
+        <div class="experience-text-box">
+          <span class="font-rounded" style="color: var(--color-pink); font-weight:700; text-transform:uppercase; font-size:0.9rem; letter-spacing:0.1em; display:block; margin-bottom:12px;">Celebrations</span>
+          <h2>Birthday Experiences</h2>
+          <p>Make their special day colorful. For kids and adults alike, we set up table easels, paint jars, canvas panels, and guide boards. Every birthday participant paints their own souvenir and takes home custom medals and certificates.</p>
+          
+          <div class="features-highlight-grid">
+            <div class="feat-highlight-item">
+              <svg class="feat-highlight-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <div class="feat-highlight-text">
+                <h4>Custom Themes</h4>
+                <p>Dragons, space ships, princesses, or abstract pop paint.</p>
+              </div>
+            </div>
+            <div class="feat-highlight-item">
+              <svg class="feat-highlight-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <div class="feat-highlight-text">
+                <h4>Take-Home Gifts</h4>
+                <p>Custom medals, badges, and painted canvas cards.</p>
+              </div>
+            </div>
+          </div>
+          
+          <button class="btn btn-primary btn-book-workshop" data-package="Birthday Experience Party">Reserve Birthday Slot</button>
+        </div>
+        <div class="experience-graphics-box">
+          <svg viewBox="0 0 400 320">
+            <rect width="400" height="320" fill="#FCE4EC"/>
+            <!-- Cake & Balloons -->
+            <circle cx="100" cy="100" r="30" fill="#FF80AB"/>
+            <circle cx="300" cy="90" r="25" fill="#4FC3F7"/>
+            <rect x="150" y="160" width="100" height="100" fill="#FFF" rx="10" stroke="#2D2A2E" stroke-width="3"/>
+            <circle cx="200" cy="160" r="10" fill="#FFE082"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 12: Schools -->
+  <section class="reveal" id="section-schools">
+    <div class="container">
+      <div class="experience-intro-section">
+        <div class="experience-text-box">
+          <span class="font-rounded" style="color: var(--color-green); font-weight:700; text-transform:uppercase; font-size:0.9rem; letter-spacing:0.1em; display:block; margin-bottom:12px;">Education</span>
+          <h2>School Partnerships</h2>
+          <p>Creative art days, competition curation, and student holiday camps. We partner with primary and secondary schools to introduce rich tactile learning formats that enhance children's fine motor skills, design thinking, and social interaction.</p>
+          
+          <div class="features-highlight-grid">
+            <div class="feat-highlight-item">
+              <svg class="feat-highlight-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <div class="feat-highlight-text">
+                <h4>Creative Clubs</h4>
+                <p>Weekly after-school painting and clay crafts courses.</p>
+              </div>
+            </div>
+            <div class="feat-highlight-item">
+              <svg class="feat-highlight-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <div class="feat-highlight-text">
+                <h4>Teacher Training</h4>
+                <p>Equipping tutors with modern, fun lesson blueprints.</p>
+              </div>
+            </div>
+          </div>
+          
+          <button class="btn btn-primary btn-book-workshop" data-package="School Partnership Program">Contact Academic Manager</button>
+        </div>
+        <div class="experience-graphics-box">
+          <svg viewBox="0 0 400 320">
+            <rect width="400" height="320" fill="#E8F5E9"/>
+            <path d="M100 240 L200 80 L300 240 Z" fill="#81C784"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 13: Artfully™ Premium Stationery -->
+  <section class="reveal" id="section-stationery">
+    <div class="container">
+      <div class="artfully-showcase">
+        <div style="text-align: center; max-width: 600px; margin:0 auto 40px auto;">
+          <span class="font-rounded" style="color: var(--color-purple); font-weight:700; text-transform:uppercase; font-size:0.9rem; letter-spacing:0.1em; display:block; margin-bottom:12px;">Premium Stationery</span>
+          <h2 class="font-rounded" style="font-size:3rem; margin-bottom:16px;">Artfully™ Collection</h2>
+          <p>Tactile luxury planners, organic journals, custom bookmarks, and sticker collections created to complement your visual scrapbooks.</p>
+        </div>
+        
+        <div class="stationery-grid">
+          <div class="stationery-card">
+            <div class="stat-img-box">
+              <svg viewBox="0 0 100 100"><rect x="30" y="20" width="40" height="60" rx="4" fill="#B39DDB" stroke="#2D2A2E" stroke-width="2"/></svg>
+            </div>
+            <h4>Linen Journal</h4>
+            <p style="font-size:0.9rem;">Dotted pages for visual scrapbooks.</p>
+          </div>
+
+          <div class="stationery-card">
+            <div class="stat-img-box">
+              <svg viewBox="0 0 100 100"><rect x="25" y="20" width="50" height="60" rx="6" fill="#FFAB91" stroke="#2D2A2E" stroke-width="2"/></svg>
+            </div>
+            <h4>Creative Planner</h4>
+            <p style="font-size:0.9rem;">Monthly templates and goal boards.</p>
+          </div>
+
+          <div class="stationery-card">
+            <div class="stat-img-box">
+              <svg viewBox="0 0 100 100"><rect x="40" y="10" width="20" height="80" rx="2" fill="#81D4FA" stroke="#2D2A2E" stroke-width="2"/></svg>
+            </div>
+            <h4>Bookmark Set</h4>
+            <p style="font-size:0.9rem;">Cozy quotes with paint splashes.</p>
+          </div>
+
+          <div class="stationery-card">
+            <div class="stat-img-box">
+              <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="#FFE082" stroke="#2D2A2E" stroke-width="2"/></svg>
+            </div>
+            <h4>Sticker Pack</h4>
+            <p style="font-size:0.9rem;">Doodles, shapes, and margins.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 14: Our Process -->
+  <section class="reveal" id="section-process">
+    <div class="container">
+      <h2 class="section-title font-rounded">Our Process</h2>
+      <p class="section-subtitle">How we transition a blank board into a beautiful memory.</p>
+      
+      <div class="process-steps-row">
+        <div class="process-connector"></div>
+        
+        <div class="process-step-node">
+          <div class="process-circle">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <h4>Book</h4>
+          <p style="font-size:0.85rem; color:var(--color-gray)">Pick a package and reserve your dates.</p>
+        </div>
+
+        <div class="process-step-node">
+          <div class="process-circle">
+            <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+          </div>
+          <h4>Customize</h4>
+          <p style="font-size:0.85rem; color:var(--color-gray)">Select outlines, colors, and guidelines.</p>
+        </div>
+
+        <div class="process-step-node">
+          <div class="process-circle">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-9 3h2v2h-2V7zm0 4h2v2h-2v-2z"/></svg>
+          </div>
+          <h4>Prepare</h4>
+          <p style="font-size:0.85rem; color:var(--color-gray)">We package colors, brushes, and panels.</p>
+        </div>
+
+        <div class="process-step-node">
+          <div class="process-circle">
+            <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.22 19.58 10.57 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/></svg>
+          </div>
+          <h4>Create</h4>
+          <p style="font-size:0.85rem; color:var(--color-gray)">Dip, sweep, and paint together.</p>
+        </div>
+
+        <div class="process-step-node">
+          <div class="process-circle">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+          </div>
+          <h4>Celebrate</h4>
+          <p style="font-size:0.85rem; color:var(--color-gray)">Drape frames, get medals, and record memories.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 15: Google Reviews Slider -->
+  <section class="reveal" id="section-reviews">
+    <div class="container">
+      <h2 class="section-title font-rounded">Happy Artists</h2>
+      <p class="section-subtitle">Real experiences shared by parents, kids, corporate managers, and schools.</p>
+      
+      <div class="reviews-container">
+        <div class="reviews-track" id="reviews-track">
+          <!-- Slide 1 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="quote-mark">“</div>
+              <div class="review-stars">★★★★★</div>
+              <p>"The Paint & Play kit saved our weekend. My 6-year-old child was so focused painting the custom wooden houses, and the non-toxic paint washed off so easily!"</p>
+              <div class="review-author">Sarah Miller</div>
+              <div class="review-author-meta">Parent of 2 Kids</div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="quote-mark">“</div>
+              <div class="review-stars">★★★★★</div>
+              <p>"We booked the joint puzzle mural workshop for our annual design team retreat. Everyone spent 2 hours painting, laughing, and building a memory. Highly recommend!"</p>
+              <div class="review-author">Marcus Vance</div>
+              <div class="review-author-meta">HR Director at Notion Inc.</div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="quote-mark">“</div>
+              <div class="review-stars">★★★★★</div>
+              <p>"Left Art Cafe organized our annual creative day in school. Over 120 kids participated. The medal and certificate package made every child feel like a winner!"</p>
+              <div class="review-author">Mrs. Evelyn Cooper</div>
+              <div class="review-author-meta">Principal at Oakwood Elementary</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-nav">
+          <button class="review-nav-btn review-prev" aria-label="Previous Review">&larr;</button>
+          <button class="review-nav-btn review-next" aria-label="Next Review">&rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 16: Instagram Feed -->
+  <section class="reveal" id="section-instagram">
+    <div class="container">
+      <h2 class="section-title font-rounded">Share Happiness</h2>
+      <p class="section-subtitle">Follow us on Instagram <a href="https://instagram.com" style="color: var(--color-pink); font-weight:600; text-decoration:none;" target="_blank">@LeftArtCafe</a> for monthly coloring themes and paint tutorials.</p>
+      
+      <div class="instagram-grid">
+        <div class="insta-card">
+          <svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#E8F5E9"/><circle cx="50" cy="50" r="20" fill="#81C784"/></svg>
+          <div class="insta-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span>124</span>
+          </div>
+        </div>
+        <div class="insta-card">
+          <svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#E1F5FE"/><rect x="30" y="30" width="40" height="40" fill="#4FC3F7"/></svg>
+          <div class="insta-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span>89</span>
+          </div>
+        </div>
+        <div class="insta-card">
+          <svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#FFF9C4"/><circle cx="50" cy="50" r="30" fill="#FFE082" stroke="#2D2A2E" stroke-width="2"/></svg>
+          <div class="insta-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span>235</span>
+          </div>
+        </div>
+        <div class="insta-card">
+          <svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#FCE4EC"/><path d="M50 20 L80 80 L20 80 Z" fill="#FF80AB"/></svg>
+          <div class="insta-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span>156</span>
+          </div>
+        </div>
+        <div class="insta-card">
+          <svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#E8EAF6"/><rect x="25" y="25" width="50" height="50" rx="5" fill="#7986CB"/></svg>
+          <div class="insta-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span>340</span>
+          </div>
+        </div>
+        <div class="insta-card">
+          <svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#FFF3E0"/><circle cx="50" cy="50" r="15" fill="#FFB74D"/></svg>
+          <div class="insta-overlay">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <span>203</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 17: FAQ Accordion -->
+  <section class="reveal" id="section-faq">
+    <div class="container">
+      <h2 class="section-title font-rounded">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know about our DIY paint kits, custom portraits, and workshop reservations.</p>
+      
+      <div class="faq-container">
+        <!-- Item 1 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>Do I need previous art experience to join classes?</h3>
+            <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-content">
+              Absolutely not! Over 80% of our attendees are complete beginners. Our workshops and guides are structured to simplify lines, shadows, and blending so anyone can leave with a masterpiece they are proud of.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>What is included inside a DIY Kit?</h3>
+            <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-content">
+              Every DIY kit includes pre-cut MDF boards or canvases, non-toxic pigment acrylic pots, customized styling brushes, reference card templates, sticker sheets, and access codes to step-by-step video instructions.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>Can I book custom birthday parties or school sessions?</h3>
+            <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-content">
+              Yes, we plan events completely. We customize theme illustrations (such as space rockets or dragons), prepare personalized name cards, configure individual table easels, and supply custom medals and certificates for the kids.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>Are the paint colors safe and washable?</h3>
+            <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-content">
+              Yes! All paints provided in kids kits and workshops are 100% non-toxic, water-based, and wash off skin and clothes easily with soap and warm water.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 18: Final CTA Footer -->
+  <footer class="footer-cta" id="section-contact">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2 class="font-rounded">Ready to Create Happiness?</h2>
+        <p>Book an interactive table workshop, choose a customized DIY kit, or chat with our design team directly via WhatsApp.</p>
+        <div class="cta-buttons">
+          <button class="btn btn-primary btn-book-workshop" data-package="Footer General Booking">Book Workshop</button>
+          <a href="#section-shop" class="btn btn-secondary">Shop DIY Kits</a>
+          <a href="https://wa.me/917358328098" class="btn btn-outline" target="_blank" style="gap:8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 11.966.01c3.178.001 6.169 1.24 8.409 3.483 2.239 2.244 3.471 5.236 3.47 8.414-.003 6.557-5.338 11.892-11.903 11.892-1.996-.001-3.957-.5-5.69-1.448L0 24zm6.59-4.846c1.6.95 3.197 1.489 4.775 1.491 5.379 0 9.761-4.372 9.764-9.756.002-2.61-1.012-5.064-2.856-6.912C16.488 2.129 14.04 1.11 11.433 1.11c-5.385 0-9.77 4.375-9.773 9.759-.001 1.624.43 3.208 1.25 4.616L1.879 21.05l4.768-1.252z"/>
+            </svg>
+            WhatsApp Support
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <a href="#hero" class="footer-logo" style="display: inline-block; margin-bottom: 12px;" aria-label="Left Art Cafe Home">
+            <img src="./logo.png" class="logo-img" alt="Left Art Cafe" style="height: 38px;">
+          </a>
+          <p style="font-size:0.9rem; margin-top:4px; margin-bottom:20px;">We create happiness through art. Hand-painted portraits, curated packaging DIY boxes, and cozy local studio paint workshops.</p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H7v3h2v9h3v-9h3l.5-3H12V6c0-.88.39-1 1-1h2V2h-3c-2.4 0-4 1.2-4 4v2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#section-what-is">About Story</a></li>
+            <li><a href="#section-choose-exp">Workshops</a></li>
+            <li><a href="#section-shop">DIY Kits Shop</a></li>
+            <li><a href="#section-stationery">Stationery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Audiences</h4>
+          <ul>
+            <li><a href="#section-who-is">Kids</a></li>
+            <li><a href="#section-who-is">Adult Jams</a></li>
+            <li><a href="#section-corporate">Corporate Murals</a></li>
+            <li><a href="#section-schools">Schools Art Day</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Studio Cafe</h4>
+          <p style="font-size:0.9rem;">124 Creative Lane,<br>Notion Garden, NY 10001</p>
+          <p style="font-size:0.9rem; margin-top:8px;">hello@leftartcafe.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Left Art Cafe. Happiness Created Through Art. All rights reserved.</p>
+        <p>Designed in partnership with Antigravity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Drawer Backdrop Overlay -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- Shopping Cart Slide-out Drawer -->
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h2>Your Art Box</h2>
+      <button class="btn-close-cart" aria-label="Close Cart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-items-list">
+      <!-- Generated dynamically in main.js -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total Price:</span>
+        <span class="cart-total-price">$0.00</span>
+      </div>
+      <button class="btn btn-primary btn-checkout">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Widget -->
+  <a href="https://wa.me/917358328098" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <span class="whatsapp-pulse"></span>
+    <span class="whatsapp-tooltip">Chat with us!</span>
+    <svg class="whatsapp-icon" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946C.06 5.348 5.397.01 11.966.01c3.178.001 6.169 1.24 8.409 3.483 2.239 2.244 3.471 5.236 3.47 8.414-.003 6.557-5.338 11.892-11.903 11.892-1.996-.001-3.957-.5-5.69-1.448L0 24zm6.59-4.846c1.6.95 3.197 1.489 4.775 1.491 5.379 0 9.761-4.372 9.764-9.756.002-2.61-1.012-5.064-2.856-6.912C16.488 2.129 14.04 1.11 11.433 1.11c-5.385 0-9.77 4.375-9.773 9.759-.001 1.624.43 3.208 1.25 4.616L1.879 21.05l4.768-1.252z"/>
+    </svg>
+  </a>
+
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
